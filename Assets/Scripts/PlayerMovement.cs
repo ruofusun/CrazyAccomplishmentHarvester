@@ -4,15 +4,50 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public CharacterController2D controller;
+
+    public float runSpeed = 40f;
+
+    float horizontalMove = 0f;
+    bool jump = false;
+    
+    
+
+  public bool enableInput = false;
+   // bool crouch = false;
+	
+    // Update is called once per frame
+    void Update () {
+
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        if (Input.GetButtonDown("Jump") && enableInput)
+        {
+            jump = true;
+        }
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate ()
     {
-        
+        // Move our character
+        if (enableInput)
+        {
+            controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+            jump = false;
+        }
+
+      
+    }
+
+    public void EnableInput()
+    {
+        enableInput = true;
+    }
+
+    public void DisableInput()
+    {
+        enableInput = false;
     }
 }
