@@ -1355,6 +1355,12 @@ GameObject:
   - component: {fileID: 1261055646}
   - component: {fileID: 1261055644}
   - component: {fileID: 1261055647}
+  - component: {fileID: 1261055649}
+  - component: {fileID: 1261055648}
+  - component: {fileID: 1261055650}
+  - component: {fileID: 1261055651}
+  - component: {fileID: 1261055653}
+  - component: {fileID: 1261055652}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1393,7 +1399,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 386
     y: 156.125
-    width: 105.10202
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1420,11 +1426,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 884.58093, y: 293.0743}
+  scrollPos: {x: -13.843018, y: 143.06458}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.49000022
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1434,7 +1440,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1261055638}
   selectedCommands:
-  - {fileID: 1261055647}
+  - {fileID: 1261055642}
   variables: []
   description: 
   stepPause: 0
@@ -1509,7 +1515,8 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Good weather!\nThanks to my beautiful sunshine.\nYoung man, I am
       here to guide you through the level.\nIf you listen to me carefully, both you
-      and I will get out here fast. \nYou know, I do have a party to attend afterwards."
+      and I will get out here fast. \nYou know, I do have a party to attend afterwards.\nJust
+      step on top of the button and we would call it a day"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1539,7 +1546,7 @@ MonoBehaviour:
   sayDialog: {fileID: 1768325470}
 --- !u!114 &1261055644
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1575,9 +1582,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 581.22534
+    x: 580.0489
     y: 173.93542
-    width: 115.30609
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1587,10 +1594,16 @@ MonoBehaviour:
   eventHandler: {fileID: 1261055646}
   commandList:
   - {fileID: 1261055644}
+  - {fileID: 1261055649}
+  - {fileID: 1261055650}
+  - {fileID: 1261055651}
+  - {fileID: 1261055648}
+  - {fileID: 1261055652}
+  - {fileID: 1261055653}
   suppressAllAutoSelections: 0
 --- !u!114 &1261055646
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1605,7 +1618,7 @@ MonoBehaviour:
   message: buttontrigger
 --- !u!114 &1261055647
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1620,6 +1633,131 @@ MonoBehaviour:
   targetObject: {fileID: 1214324057}
   methodName: EnableInput
   delay: 1
+--- !u!114 &1261055648
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261055636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0729d4f369e6a4241a6e7e3b8b9c1933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  _animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1218289149}
+  _parameterName:
+    stringRef: {fileID: 0}
+    stringVal: die
+  animatorOLD: {fileID: 0}
+  parameterNameOLD: 
+--- !u!114 &1261055649
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261055636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1261055650
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261055636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0729d4f369e6a4241a6e7e3b8b9c1933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  _animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1495896047}
+  _parameterName:
+    stringRef: {fileID: 0}
+    stringVal: play
+  animatorOLD: {fileID: 0}
+  parameterNameOLD: 
+--- !u!114 &1261055651
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261055636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  durationOLD: 0
+--- !u!114 &1261055652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261055636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
+--- !u!114 &1261055653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261055636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  storyText: God bless her
+  description: 
+  character: {fileID: 951153818}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1365606787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495896045}
   - component: {fileID: 1495896046}
+  - component: {fileID: 1495896047}
   m_Layer: 0
   m_Name: Sucker
   m_TagString: Untagged
@@ -1721,8 +1860,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495896044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -634.17, y: -479.85, z: 0}
-  m_LocalScale: {x: 1, y: 2.75, z: 1}
+  m_LocalPosition: {x: -644.3, y: -479.23, z: 0}
+  m_LocalScale: {x: 2.5, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167753173}
@@ -1768,9 +1907,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9245283, g: 0.072001, b: 0.013082923, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 7bc027ba988c75c4fbf0c10d5748bbee, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1780,6 +1919,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1495896047
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495896044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ac829163f73db243b9ab764408f0b09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1647021073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,7 +2646,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.16958226, b: 0.13679248, a: 1}
+  m_Color: {r: 0.9686275, g: 0.4156863, b: 0.23529413, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
