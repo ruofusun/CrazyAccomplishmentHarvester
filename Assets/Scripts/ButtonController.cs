@@ -5,6 +5,7 @@ using DG.Tweening;
 using Fungus;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Collision2D = UnityEngine.Collision2D;
 
 public class ButtonController : MonoBehaviour
 {
@@ -35,10 +36,10 @@ public class ButtonController : MonoBehaviour
             if (currentTween == null|| (currentTween!=null&&!currentTween.IsPlaying()))
             {
                
-                if (Mathf.Abs(dis) > 1.5f)
+                if (Mathf.Abs(dis) > 4)
                 {
                     currentTween =
-                        rb2d.DOMove(new Vector2(_characterController2D.transform.position.x, rb2d.position.y), Mathf.Min(Mathf.Abs(dis)/3, 1.5f));
+                        rb2d.DOMove(new Vector2(_characterController2D.transform.position.x+ dis/Mathf.Abs(dis)*1.5f, rb2d.position.y), Mathf.Min(Mathf.Abs(dis)/2, 2f));
                 }
                 
             }
@@ -60,6 +61,17 @@ public class ButtonController : MonoBehaviour
                 }
             }
         }
+
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.name.Contains("turtle"))
+        {
+            other.gameObject.GetComponent<Animator>().SetTrigger("flip");
+            Fungus.Flowchart.BroadcastFungusMessage ("FlipTurtle");
+        }
     }
 
     [Button]
@@ -71,5 +83,10 @@ public class ButtonController : MonoBehaviour
     public void StartChasePlayer()
     {
         canChasePlayer = true;
+    }
+
+    public void StopChasePlayer()
+    {
+        canChasePlayer = false;
     }
 }
