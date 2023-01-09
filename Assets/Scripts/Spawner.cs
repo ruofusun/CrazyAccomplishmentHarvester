@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     float spawnTime = 0.0f;
 
     GameObject player;
-    public bool enableSpawn = false;
+
 
 
     // Start is called before the first frame update
@@ -43,10 +43,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    public void EnableSpawn()
-    {
-        //enableSpawner = true;
-    }
+
 
 
 }

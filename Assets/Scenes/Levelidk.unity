@@ -3347,6 +3347,8 @@ GameObject:
   - component: {fileID: 1167723363}
   - component: {fileID: 1167723366}
   - component: {fileID: 1167723367}
+  - component: {fileID: 1167723369}
+  - component: {fileID: 1167723368}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -3398,6 +3400,7 @@ MonoBehaviour:
   - {fileID: 1167723367}
   - {fileID: 1167723363}
   - {fileID: 1167723366}
+  - {fileID: 1167723368}
   suppressAllAutoSelections: 0
 --- !u!114 &1167723343
 MonoBehaviour:
@@ -3415,7 +3418,7 @@ MonoBehaviour:
   scrollPos: {x: 211.18405, y: 90.82212}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 233.75
+  blockViewHeight: 372.8
   zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
@@ -3425,7 +3428,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1167723342}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1167723368}
   variables: []
   description: Now Move
   stepPause: 0
@@ -3476,7 +3480,8 @@ MonoBehaviour:
   blockName: Punish
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 1167723369}
   suppressAllAutoSelections: 0
 --- !u!114 &1167723349
 MonoBehaviour:
@@ -3688,6 +3693,48 @@ MonoBehaviour:
   itemId: 20
   indentLevel: 0
   sayDialog: {fileID: 1691690712}
+--- !u!114 &1167723368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167723340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 22
+  indentLevel: 0
+  targetFlowchart: {fileID: 1167723343}
+  targetBlock: {fileID: 1167723346}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1167723369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167723340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 21
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1173368102}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1 &1171535345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,7 +3890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1173368104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3943,7 +3990,6 @@ MonoBehaviour:
   - {fileID: 1516611457}
   - {fileID: 61817338}
   - {fileID: 1232227493}
-  enableSpawn: 0
 --- !u!1 &1221019701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4701,6 +4747,7 @@ MonoBehaviour:
     m_Bits: 64
   m_GroundCheck: {fileID: 564518534}
   m_CrouchDisableCollider: {fileID: 0}
+  m_Grounded: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7145,6 +7192,7 @@ MonoBehaviour:
     m_Bits: 64
   m_GroundCheck: {fileID: 564518534}
   m_CrouchDisableCollider: {fileID: 0}
+  m_Grounded: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
