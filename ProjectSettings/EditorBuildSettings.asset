@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level2_ChuiBei.unity
+    guid: 65e51cf348535426893156bbc96bbccc
+  - enabled: 1
+    path: Assets/Scenes/Levelidk.unity
+    guid: 358e0930fb364e74cb35172cde0f7b1f
+  - enabled: 1
+    path: Assets/Scenes/Levelidk2.unity
+    guid: a2cce26ea1a0b7d4ba980a9943920e3b
+  - enabled: 1
+    path: Assets/Scenes/TurtleFlipOverBad.unity
+    guid: bf9246b666c08ce449213550415deb83
+  - enabled: 1
+    path: Assets/Scenes/TurtleFlipOverGood.unity
+    guid: 5fe475690e7926d41800903134a70cb7
   m_configObjects: {}
