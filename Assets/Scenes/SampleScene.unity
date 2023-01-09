@@ -4019,6 +4019,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2813981260574839200, guid: e07cf37618e24304b9c323eaa9d93e87, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813981260574839200, guid: e07cf37618e24304b9c323eaa9d93e87, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188367527575755357, guid: e07cf37618e24304b9c323eaa9d93e87, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6779297290907258920, guid: e07cf37618e24304b9c323eaa9d93e87, type: 3}
       propertyPath: m_Name
       value: Hero

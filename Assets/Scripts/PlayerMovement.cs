@@ -12,10 +12,12 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
     private Animator _animator;
+    private HammerController hammer;
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        hammer = GetComponentInChildren<HammerController>(true);
     }
 
     public bool enableInput = false;
@@ -34,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetTrigger("jump");
         }
 
-        if (Input.GetKeyDown(KeyCode.E)&&enableInput)
+        if (Input.GetKeyDown(KeyCode.E)&&enableInput && hammer.gameObject.activeSelf)
         {
             _animator.SetTrigger("attack");
         }
