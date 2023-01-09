@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     void Update () {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        if(controller.m_Grounded)
+        if(controller.m_Grounded&&enableInput)
         _animator.SetFloat("speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump") && enableInput)
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetTrigger("jump");
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)&&enableInput)
         {
             _animator.SetTrigger("attack");
         }
