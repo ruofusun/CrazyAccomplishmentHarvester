@@ -5,7 +5,7 @@ using UnityEngine;
 public class GetHammer : MonoBehaviour
 {
     public GameObject player;
-    public GameObject hammer;
+   // public GameObject hammer;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,8 @@ public class GetHammer : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            hammer.SetActive(true);
+            player.GetComponentInChildren<HammerController>(true).gameObject.SetActive(true);
+           // hammer.SetActive(true);
             Debug.Log("switched tag");
             player.transform.tag = "PlayerWithHammer";
         }
