@@ -29,14 +29,10 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Hammer")
-        {
-            Getit();
-            //transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }
+     
     }
 
-    void Getit()
+   public void Getit()
     {
         attack = true;
         //transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyGO : MonoBehaviour
+public class HammerController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,14 +15,11 @@ public class DestroyGO : MonoBehaviour
     {
         
     }
-
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.tag == "Enemy")
+        if (collision.gameObject.tag == "DM" )
         {
-            Destroy(this.gameObject);
+            collision.gameObject.GetComponent<EnemyMovement>().Getit();
         }
     }
 }

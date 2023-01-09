@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Laser
   - Enemy
+  - DestroyAll
+  - Hammer
+  - DM
   layers:
   - Default
   - TransparentFX
