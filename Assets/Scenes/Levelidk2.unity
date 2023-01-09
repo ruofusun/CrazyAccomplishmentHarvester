@@ -1661,6 +1661,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.02
+--- !u!114 &647498826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647498817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c330617a8759eea46ab8a0db87f3547b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &844439150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,9 +2330,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1167723346}
-  selectedCommands:
-  - {fileID: 1167723369}
+  - {fileID: 1167723378}
+  selectedCommands: []
   variables:
   - {fileID: 1167723373}
   description: Now Move
@@ -2362,8 +2373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 206.62852
-    y: 1.6263752
+    x: 257.6923
+    y: 2.690205
     width: 114.68085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2623,7 +2634,7 @@ MonoBehaviour:
   value: {fileID: 647498825}
 --- !u!114 &1167723375
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2645,7 +2656,7 @@ MonoBehaviour:
   parameterNameOLD: 
 --- !u!114 &1167723376
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2663,7 +2674,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1167723377
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2685,7 +2696,7 @@ MonoBehaviour:
   parameterNameOLD: 
 --- !u!114 &1167723378
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2698,7 +2709,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 399.65884
-    y: 99.63904
+    y: 69.85181
     width: 171.70212
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2714,7 +2725,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1167723379
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
