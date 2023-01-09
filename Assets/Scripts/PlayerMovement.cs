@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,20 +11,27 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
-    
-    
+    private Animator _animator;
 
-  public bool enableInput = false;
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
+    public bool enableInput = false;
    // bool crouch = false;
 	
     // Update is called once per frame
     void Update () {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if(controller.m_Grounded)
+        _animator.SetFloat("speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump") && enableInput)
         {
             jump = true;
+            _animator.SetTrigger("jump");
         }
 
 

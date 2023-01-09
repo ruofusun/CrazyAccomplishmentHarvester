@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6779297290907258925}
   - component: {fileID: 6779297290907258927}
   - component: {fileID: 6779297290907258926}
+  - component: {fileID: 527801823586836282}
   m_Layer: 7
   m_Name: Hero
   m_TagString: Untagged
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: cf07a21db9e146742881f4ba8df18b70, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e892ad5f4398a104db889e77e9399357, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -102,7 +103,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000047683716, y: -0.20010233}
+  m_Offset: {x: -0.09, y: -0.12}
   m_Size: {x: 0.96744823, y: 1.5495639}
   m_Direction: 0
 --- !u!50 &6779297290907258925
@@ -117,7 +118,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1.5
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46283547f8786984f954b5b85056f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 250
+  m_JumpForce: 2700
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 0
@@ -166,8 +167,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 6779297290907258927}
-  runSpeed: 15
+  runSpeed: 22
   enableInput: 0
+--- !u!95 &527801823586836282
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779297290907258920}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75b1598bd80132e4da755e882bf11816, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6779297291265864854
 GameObject:
   m_ObjectHideFlags: 0
