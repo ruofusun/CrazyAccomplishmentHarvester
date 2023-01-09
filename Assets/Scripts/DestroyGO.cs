@@ -16,7 +16,13 @@ public class DestroyGO : MonoBehaviour
         
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "DestroyAll")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
