@@ -20,7 +20,9 @@ public class HammerButton : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             animHammer.Play("HammerUp");
+            
             pressH.SetActive(false);
         }
     }
