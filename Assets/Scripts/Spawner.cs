@@ -9,6 +9,8 @@ public class Spawner : MonoBehaviour
 
     GameObject player;
     public bool enableSpawn = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +22,20 @@ public class Spawner : MonoBehaviour
     {
         var playerPos = player.transform.position;
 
+
         spawnTime = spawnTime - Time.deltaTime;
         if (spawnTime <= 0)
         {
             //var rockPos = Random.Range(4, 3);
 
             Vector2 pos = new Vector2(4, 3);
+            if(playerPos.x >= 10)
+            {
+                pos = new Vector2(20, 3);
+            }
             //Quaternion.LookRotation()
             int which = Random.Range(0, ima.Length);
-            GameObject obj=   Instantiate(ima[which], pos, Quaternion.identity);
+            GameObject obj = Instantiate(ima[which], pos, Quaternion.identity);
             obj.GetComponent<Rigidbody2D>().velocity = (playerPos - transform.position).normalized * 3;
 
 
