@@ -24,7 +24,7 @@ public class CameraMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" || collision.tag == "PlayerWithHammer")
         {
             Debug.Log("yes, indeed");
             trigger = true;
@@ -46,7 +46,7 @@ public class CameraMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" || collision.tag == "PlayerWithHammer")
         {
             trigger = false;
         }
@@ -54,7 +54,7 @@ public class CameraMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" || collision.tag == "PlayerWithHammer")
         {
             Debug.Log("goodbye");
             trigger = false;

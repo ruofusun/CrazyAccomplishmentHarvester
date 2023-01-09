@@ -29,12 +29,22 @@ public class GrandpaControllor : MonoBehaviour
             Fungus.Flowchart.BroadcastFungusMessage("grandpaMessage");
             button.SetActive(false);
             fakeButton.SetActive(true);
+        }       
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "PlayerWithHammer")
+        {
+            Debug.Log("hammer detected");
 
             if (Input.GetKeyDown(KeyCode.H))
             {
+                Debug.Log("chuibei time");
                 animGrandpa.Play("GrandpaHappy");
+                Fungus.Flowchart.BroadcastFungusMessage("chuibei");
             }
         }
-        
+
     }
 }
