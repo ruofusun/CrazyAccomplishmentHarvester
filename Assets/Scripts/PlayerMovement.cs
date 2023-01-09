@@ -34,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetTrigger("jump");
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            _animator.SetTrigger("attack");
+        }
+
 
     }
 
