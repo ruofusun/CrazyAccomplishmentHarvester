@@ -8,12 +8,12 @@ public class GrandpaControllor : MonoBehaviour
     public GameObject button;
     public GameObject fakeButton;
 
-    private Animation animGrandpa;
+    private Animator animGrandpa;
 
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Animation>();
+        GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,19 +29,22 @@ public class GrandpaControllor : MonoBehaviour
             Fungus.Flowchart.BroadcastFungusMessage("grandpaMessage");
             button.SetActive(false);
             fakeButton.SetActive(true);
-         
-        }
+        }       
+    }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
         if (collision.tag == "PlayerWithHammer")
         {
             Debug.Log("hammer detected");
+
             if (Input.GetKeyDown(KeyCode.H))
             {
                 Debug.Log("chuibei time");
-                Fungus.Flowchart.BroadcastFungusMessage("chuibei");
                 animGrandpa.Play("GrandpaHappy");
+                Fungus.Flowchart.BroadcastFungusMessage("chuibei");
             }
         }
-        
+
     }
 }

@@ -9,8 +9,14 @@ public class SceneManager : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("next plz");
+            Debug.Log("next instruction plz");
             Fungus.Flowchart.BroadcastFungusMessage("loadNextScene");
+        }
+
+        if (collision.tag == "PlayerWithHammer")
+        {
+            Debug.Log("next new level plz");
+            Fungus.Flowchart.BroadcastFungusMessage("newLevel");
         }
     }
 }

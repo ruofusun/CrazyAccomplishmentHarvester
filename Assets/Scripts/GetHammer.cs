@@ -26,6 +26,7 @@ public class GetHammer : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             hammer.SetActive(true);
+            Debug.Log("switched tag");
             player.transform.tag = "PlayerWithHammer";
         }
     }
