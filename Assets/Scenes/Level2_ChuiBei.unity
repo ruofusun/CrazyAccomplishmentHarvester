@@ -1397,8 +1397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 143.0992
-    y: 160.30803
+    x: 157.29085
+    y: 210.9923
     width: 98.656876
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1555,7 +1555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 297.81766
+    x: 313.02286
     y: 97.39602
     width: 76.355804
     height: 40
@@ -1650,8 +1650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 413.0162
-    y: 96.21417
+    x: 464.71402
+    y: 112.43312
     width: 80.410545
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1950,8 +1950,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 303.53815
-    y: 160.0763
+    x: 315.70242
+    y: 182.3774
     width: 132.10847
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2071,8 +2071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 487.70862
-    y: 161.45163
+    x: 518.11914
+    y: 217.20432
     width: 95.61582
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2201,8 +2201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 321.78452
-    y: 245.22589
+    x: 320.77084
+    y: 291.85538
     width: 112.848465
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5009,6 +5009,7 @@ GameObject:
   - component: {fileID: 1521600932}
   - component: {fileID: 1521600934}
   - component: {fileID: 1521600935}
+  - component: {fileID: 1521600936}
   m_Layer: 0
   m_Name: grandpa
   m_TagString: Untagged
@@ -5101,7 +5102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 5.12, y: 5.1224995}
     newSize: {x: 4.096, y: 4.096}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5124,6 +5125,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1113828119}
   fakeButton: {fileID: 1323568049}
+--- !u!95 &1521600936
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521600931}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc11d131fdc50423c87bc7a9482cfd52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1569078099
 GameObject:
   m_ObjectHideFlags: 0
