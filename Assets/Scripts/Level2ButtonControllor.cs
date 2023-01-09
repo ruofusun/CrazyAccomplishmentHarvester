@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using Fungus;
 using UnityEngine;
 
-public class GrandpaControllor : MonoBehaviour
+public class Level2ButtonControllor : MonoBehaviour
 {
-    public GameObject button;
-    public GameObject fakeButton;
+    //public Animator camAnimator;
+    public GameObject ouch;
+    public GameObject grandpa;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //camAnimator.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,10 +25,8 @@ public class GrandpaControllor : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Fungus.Flowchart.BroadcastFungusMessage("grandpaMessage");
-            button.SetActive(false);
-            fakeButton.SetActive(true);
+            Destroy(ouch, 0.5f);
+            Fungus.Flowchart.BroadcastFungusMessage("cleared");
         }
-        
     }
 }
