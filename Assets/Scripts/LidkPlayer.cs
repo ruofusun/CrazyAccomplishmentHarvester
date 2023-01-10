@@ -20,7 +20,8 @@ public class LidkPlayer : MonoBehaviour
     {
         if(collision.tag == "EdaM")
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("TurtleFlipOver");
+            //UnityEngine.SceneManagement.SceneManager.LoadScene("TurtleFlipOver");
+            Fungus.Flowchart.BroadcastFungusMessage("Loading");
         }
 
         if(collision.tag == "AWord")

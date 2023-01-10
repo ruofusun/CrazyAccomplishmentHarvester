@@ -23,7 +23,7 @@ public class LevelidkCount : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "DM")
+        if(collision.tag == "DM" || collision.tag == "AWord")
         {
             counter += 1;
             if (counter >= 6)
