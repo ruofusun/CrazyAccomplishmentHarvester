@@ -7,7 +7,13 @@ public class GrandpaControllor : MonoBehaviour
 {
     public GameObject button;
     public GameObject fakeButton;
-    public GameObject hammer;
+
+    private Animator animGrandpa;
+
+    private void Start()
+    {
+        animGrandpa = gameObject.GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,11 +31,11 @@ public class GrandpaControllor : MonoBehaviour
         {
             Debug.Log("hammer detected");
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 Debug.Log("chuibei time");
+                animGrandpa.Play("GrandpaHappy");
                 Fungus.Flowchart.BroadcastFungusMessage("chuibei");
-                hammer.GetComponent<SpriteRenderer>().enabled = false; 
             }
             
         }

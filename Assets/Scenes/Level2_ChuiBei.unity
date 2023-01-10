@@ -1090,12 +1090,6 @@ GameObject:
   - component: {fileID: 383113978}
   - component: {fileID: 383113980}
   - component: {fileID: 383113981}
-  - component: {fileID: 383113982}
-  - component: {fileID: 383113984}
-  - component: {fileID: 383113986}
-  - component: {fileID: 383113987}
-  - component: {fileID: 383113985}
-  - component: {fileID: 383113988}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1116,11 +1110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 169.43922, y: 119.45536}
+  scrollPos: {x: -116.71647, y: 171.22725}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7625001
+  zoom: 0.87600005
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1128,9 +1122,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 383113986}
-  selectedCommands:
-  - {fileID: 383113988}
+  - {fileID: 383113971}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1173,7 +1166,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2.8027496
     y: -0.06980896
-    width: 116.2295
+    width: 113.92694
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1300,7 +1293,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 22.290848
     y: 78.992294
-    width: 99.18032
+    width: 97.37443
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1458,7 +1451,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.02286
     y: -0.603981
-    width: 76.22951
+    width: 75.68493
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1553,7 +1546,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 414.45984
     y: 204.35661
-    width: 80.81967
+    width: 79.68037
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1855,7 +1848,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 635.53705
     y: -104.9502
-    width: 133.93442
+    width: 129.33789
     height: 40
   tint: {r: 0, g: 0, b: 0, a: 1}
   useCustomTint: 1
@@ -1955,7 +1948,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 265.11914
     y: 0.20431519
-    width: 95.245895
+    width: 95.091324
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2085,7 +2078,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.62633
     y: 196.95638
-    width: 112.950806
+    width: 111.64383
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2205,7 +2198,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.93954
     y: 80.337326
-    width: 123.44261
+    width: 120.77625
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2343,9 +2336,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 607.9784
-    y: 204.15863
-    width: 94.59016
+    x: 699.3025
+    y: 135.66548
+    width: 92.23744
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2355,9 +2348,7 @@ MonoBehaviour:
   eventHandler: {fileID: 383113972}
   commandList:
   - {fileID: 383113969}
-  - {fileID: 383113982}
   - {fileID: 383113968}
-  - {fileID: 383113984}
   - {fileID: 383113965}
   - {fileID: 383113979}
   - {fileID: 383113976}
@@ -2414,7 +2405,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 640.7733
     y: -38.217674
-    width: 137.2131
+    width: 133.90411
     height: 40
   tint: {r: 0, g: 0, b: 0, a: 1}
   useCustomTint: 1
@@ -2559,148 +2550,6 @@ MonoBehaviour:
     stringVal: Levelidk2
   loadingImage: {fileID: 0}
   sceneNameOLD: 
---- !u!114 &383113982
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383113900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 69
-  indentLevel: 0
-  animator:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 1521600936}
-  stateName:
-    stringRef: {fileID: 0}
-    stringVal: GrandpaHappy
-  layer:
-    integerRef: {fileID: 0}
-    integerVal: -1
-  time:
-    floatRef: {fileID: 0}
-    floatVal: 1
---- !u!114 &383113984
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383113900}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 70
-  indentLevel: 0
-  animator:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 1521600936}
-  stateName:
-    stringRef: {fileID: 0}
-    stringVal: GrandpaHappy
-  layer:
-    integerRef: {fileID: 0}
-    integerVal: -1
-  time:
-    floatRef: {fileID: 0}
-    floatVal: 0
---- !u!114 &383113985
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383113900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 73
-  indentLevel: 0
-  animator:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 1521600936}
-  stateName:
-    stringRef: {fileID: 0}
-    stringVal: GrandpaHappy
-  layer:
-    integerRef: {fileID: 0}
-    integerVal: -1
-  time:
-    floatRef: {fileID: 0}
-    floatVal: 0
---- !u!114 &383113986
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383113900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 743.3476
-    y: 199.88885
-    width: 112.295074
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 72
-  blockName: Anim
-  description: 
-  eventHandler: {fileID: 383113987}
-  commandList:
-  - {fileID: 383113985}
-  - {fileID: 383113988}
-  suppressAllAutoSelections: 0
---- !u!114 &383113987
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383113900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 383113986}
-  suppressBlockAutoSelect: 0
-  message: chuibei
---- !u!114 &383113988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383113900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 74
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 383113986}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1 &407477422
 GameObject:
   m_ObjectHideFlags: 0
@@ -5750,7 +5599,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d691575aa0bb04551b5331fc8fb60195, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5791,7 +5640,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.57798386, y: -0.3253733}
+  m_Offset: {x: -0.54916954, y: 0.5679264}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5802,7 +5651,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.1168785, y: 4.5373383}
+  m_Size: {x: 6.672947, y: 6.784994}
   m_EdgeRadius: 0
 --- !u!114 &1521600935
 MonoBehaviour:
@@ -5818,7 +5667,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1002627703}
   fakeButton: {fileID: 1323568049}
-  hammer: {fileID: 1420679702}
 --- !u!95 &1521600936
 Animator:
   serializedVersion: 4
@@ -6263,7 +6111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 941919046}
-  hammer: {fileID: 1420679702}
 --- !u!1 &1862982603
 GameObject:
   m_ObjectHideFlags: 0
